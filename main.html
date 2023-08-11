@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesa Africa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="sesa-main">
+        <div class="overlay">
+
+              <!-- navigation bar -->
+        <div class="sesa-nav animate__animated animate__fadeInDown">
+            <div class="sesa-logo">
+                <img src="../Sesa_Africa/images/logo.png" alt="">
+            </div>
+            <!-- nav items  -->
+            <div class="sesa-items">
+                <a href="" class="sesa-item">
+                    <span class="item-number">1.</span>
+                    <span class="item-name">Accueille</span>
+                </a>
+                <!-- 2nd  -->
+                <a href="" class="sesa-item">
+                    <span class="item-number">2.</span>
+                    <span class="item-name">A Propos</span>
+                </a>
+                <!-- 3rd -->
+                <a href="" class="sesa-item">
+                    <span class="item-number">3.</span>
+                    <span class="item-name">Contacte</span>
+                </a>
+            </div>
+        </div>
+              <div class="sesa-body">
+         <!-- hero section -->
+         <div class="sesa-hero animate__animated animate__fadeInDown">
+            <div class="hero-title">SESA AFRICA</div>
+            <div class="hero-intro">
+                Des mots d’accueil dans certaines langues parlées sur le continent africain
+                <span class="changing">Pô la bwam</span>
+            </div>
+            <a href="" class="hero-button">
+                <button>EN SAVOIR PLUS <i class="bi bi-caret-right-fill"></i></button>
+            </a>
+        </div>
+        <!-- large images -->
+        <div class="hero-image ">
+            <img src="./images/pngwing.com.png" alt="">
+        </div>
+       </div>
+       <div class="caret animate__animated animate__fadeInDown"> <i class="bi bi-caret-down-fill""></i></div>
+
+        </div>
+      
+
+ 
+    </div>
+    <script>
+        const text = document.querySelector(".changing");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Pô la bwam";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Karibu";
+            }, 2000);
+            setTimeout(() => {
+                text.textContent = "Akwaba";
+            }, 400);
+            setTimeout(() => {
+                text.textContent = "Welcome";
+            }, 6000);
+            setTimeout(() => {
+                text.textContent = "Jabbaama";
+            }, 8000);
+            setTimeout(() => {
+                text.textContent = "Ékouabô";
+            }, 10000);
+            setTimeout(() => {
+                text.textContent = "Karibu";
+            }, 12000);
+            setTimeout(() => {
+                text.textContent = "Boas-vindas";
+            }, 14000);
+            setTimeout(() => {
+                text.textContent = "Marhaba";
+            }, 16000);
+            setTimeout(() => {
+                text.textContent = "Adanse";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Bienvenido";
+            }, 18000);
+            setTimeout(() => {
+                text.textContent = "Wamkelekile";
+            }, 20000);
+            setTimeout(() => {
+                text.textContent = "Mbolo";
+            }, 22000); //1s = 1000 milliseconds
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
+    </script> 
+</body>
+</html>

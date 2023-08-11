@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.sesa-main{
+    background-image: url('../images/ian-kiragu-GSh_PwsZsPQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* position:absolute;
+    top:0;
+    left:0; */
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    /* width:100%; */
+    height: 100vh;
+
+}
+.overlay {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+.sesa-nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0 1rem;
+    font-size: .8rem;
+    animation:fadeInDown;
+    animation-duration: 2s;
+    /* z-index: ; */
+}
+.sesa-logo img{
+    width:4rem;
+    margin:1rem 0;
+
+}
+.sesa-items{
+    display:flex;
+    gap:2.3rem;
+    margin:1rem 0;
+}
+
+.sesa-items a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.item-number{
+    color:orange;
+}
+.sesa-body{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    /* margin-bottom: 10rem; */
+    margin-left:2rem;
+    margin-right:2rem;
+    animation:fadeInDown;
+    animation-duration: 2s;
+    /* margin: 0 2rem; */
+}
+.hero-image img{
+    width:22rem;
+    
+    /* align-self: center; */
+}
+.sesa-hero{
+    animation:fadeInDown;
+    animation-duration: 2s;
+}
+.hero-title{
+    color:orange;
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+.hero-intro{
+    color:#fff;
+    font-size: 2rem;
+    width:80%;
+    font-weight: 700;
+    margin:1.5rem 0;
+
+}
+.changing{
+    color:orange;
+
+}
+.changing:before{
+    color:orange;
+
+    content: "";
+    /* border-left: 2px solid #4070F4; */
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+.hero-button button{
+    height:3rem;
+    width:15rem;
+    background-color: orange;
+    color:#fff;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.hero-button button:hover{
+    border: 1px solid orange;
+    color:orange;
+    background-color: transparent
+    ;
+    transition: 0.3s all ease-in-out;
+
+    
+}
+.hero-button i{
+    transition: transform 0.2;
+}
+.hero-button:hover i{
+    transform: translate(10px);
+}
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.caret{
+    font-size: 3rem;
+    color:orange;
+    position:relative;
+    bottom:7rem;
+    text-align: center;
+    animation: move 2s linear infinite;
+}
