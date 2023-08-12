@@ -8,6 +8,7 @@
 }
 html {
     scroll-behavior: smooth;
+    margin: 0;
   }
   
 .sesa-main{
@@ -21,7 +22,7 @@ html {
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
-    /* width:100%; */
+    /* width:200vw; */
     min-height: 100vh;
     max-height: 200vh;
 
@@ -33,7 +34,7 @@ html {
     width: 100%;
     min-height: 100vh;
     max-height: 200vh;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.269);
   }
 .sesa-nav{
     display: flex;
@@ -481,5 +482,8 @@ margin-top: 4rem;
     }
     .caret{
         margin-top: 3rem;
+    }
+    .sesa-items{
+        gap:1rem;
     }
 }
