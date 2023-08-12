@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Quicksand:wght@300;500&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -50,7 +52,7 @@ html {
 .sesa-items{
     display:flex;
     gap:2.3rem;
-    margin:1rem 0;
+    margin:2rem 0;
 }
 
 .sesa-items a{
@@ -273,6 +275,7 @@ margin-top: 4rem;
     width:25rem;
     display: none;
     height:25rem;
+    overflow-y: scroll;
     background-color: #fff;
     position:fixed;
     top:5rem;
@@ -281,7 +284,7 @@ margin-top: 4rem;
     padding:10px;
     border: none;
 }
-.sesa-modal .close{
+.sesa-modal .close, .close2, .close4{
  font-size: 2rem;
  float:right;
  margin: .1rem .5rem;
@@ -318,13 +321,6 @@ margin-top: 4rem;
 
 /* contact-Css */
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Quicksand:wght@300;500&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .main-container
 {
@@ -342,18 +338,20 @@ margin-top: 4rem;
 
 .header-div .span-3
 {
-    font-size: 24px;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-right: 5px;
     color: rgb(255,165,0);
-    font-family: 'Quicksand', light;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .header-div .span-head4
 {
-    font-size: 24px;
+    font-size: 1.1rem;
     font-weight: bold;
-    font-family: 'Quicksand', medium;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .snd-container
@@ -381,26 +379,29 @@ margin-top: 4rem;
 .desc h3 .sesa
 {
     color:rgb(255,165,0);
-    font-family: 'Quicksand', medium;
+    font-family: 'Montserrat', sans-serif;
+
     font-size: 25px;
 
 }
 .desc h3
 {
     font-size: 25px;
-    font-family: 'Quicksand', medium;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .desc p .author
 {
     color:rgb(255,165,0);
-    font-family: 'Quicksand', medium;
+    font-family: 'Montserrat', sans-serif;
+
     font-size: 15px;
 }
 
 .desc p
 {
-    font-family: 'Arimo', medium;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     margin-top: 1rem;
 }
@@ -414,14 +415,15 @@ margin-top: 4rem;
 .desc-button .desc-but
 {
     height: 3rem;
-    width: 15em;
+    width: 16em;
     background-color: rgb(255,165,0);
     color: white;
     border: none;
     border-radius: 10px;
-    font-family: 'Arimo', regular;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .foot
@@ -443,7 +445,7 @@ margin-top: 4rem;
 
 .foot .list .bi
 {
-    font-size: 40px;
+    font-size: 1rem;
     margin: 1.5rem;
     color: White;
 
@@ -457,8 +459,8 @@ margin-top: 4rem;
 }
 .Sesa2023 p{
     color: white;
-    font-family: 'Arimo';
-    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
 }
 
 @media screen and (max-width: 427px){
@@ -472,4 +474,12 @@ margin-top: 4rem;
     font-family: 'Arimo';
     font-size: 10px;
 }
+}
+@media screen and (max-width: 771px){
+    .sesa-body{
+        flex-direction: column;
+    }
+    .caret{
+        margin-top: 3rem;
+    }
 }

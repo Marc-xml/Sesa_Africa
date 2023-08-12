@@ -32,7 +32,7 @@
                     <span class="item-name">A Propos</span>
                 </a>
                 <!-- 3rd -->
-                <a href="" class="sesa-item">
+                <a href="#contact" class="sesa-item">
                     <span class="item-number">3.</span>
                     <span class="item-name">Contacte</span>
                 </a>
@@ -46,7 +46,7 @@
                 Des mots d’accueil dans certaines langues parlées sur le continent africain
                 <span class="changing">Pô la bwam</span>
             </div>
-            <a href="" class="hero-button">
+            <a href="#about" class="hero-button">
                 <button>EN SAVOIR PLUS <i class="bi bi-caret-right-fill"></i></button>
             </a>
         </div>
@@ -93,7 +93,7 @@
                         
                             « Si tu sais être comme le soleil, tu pourras raviver tous les soleils éteints autour de toi ; mais ça ne passera pas que par des mots, il faut y associer ton cœur et des actes ». <span class="orange">Nioussérê Kalala Omotunde</span>
                           </div>
-                        <div class="card-button">
+                        <div class="card-button" id="bt2">
                             <button>En Savoir Plus <i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                             
                             « La facilité avec laquelle nous renonçons, souvent, à notre culture ne s’explique que par notre ignorance de celle-ci ». <span class="orange">Cheikh Anta Diop</span>
                         </div>
-                        <div class="card-button">
+                        <div class="card-button" id="bt3">
                             <button>En Savoir Plus <i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
@@ -128,7 +128,47 @@ La boite éducative sur l’Afrique disponible dans un premier temps en françai
         </div>
         <!-- modal2  -->
         <div class="sesa-modal animate__animated animate__fadeInDownBig" id="modal2">
-            <span class="close">&times;</span>
+            <span class="close2">&times;</span>
+            
+            <div class="modal-body">
+                Ceux qui parmi nous, pensent que les mythes de nos ancêtres africains seraient incompatibles avec la notion de « modernité » doivent absolument lire cet ouvrage.
+
+ 
+
+Plus 3000 ans avant la Bible, nos ancêtres ont rédigé les premiers Textes Sacrés monothéistes de l’histoire humaine qui servirent par la suite indéniablement de balise aux rédacteurs des textes sémitiques. Cela, beaucoup de spécialistes l'ont déjà avoué.
+
+ 
+
+Les Textes Sacrés de nos ancêtres nous révèlent enfin leur vision spirituelle certes voilée de mystère (d'où le recours aux mythes) mais totalement inédite car reposant quant au fond, sur une démarche volontairement scientifique.
+
+ 
+
+Ainsi, en lisant leurs Textes de Révélation sur l’origine de la vie, on découvre que celle-ci émane d’un Dieu unique et qu’un puissant Chaos avait précédé l’Ordre, lors de la formation de l’univers.
+
+ 
+
+Par conséquent, il leur sembla indispensable de comprendre comment l’Ordre était parvenu à triompher du Désordre mais aussi comment le Créateur avait oeuvré pour parvenir à ce formidable résultat et ainsi rendre la vie possible.
+
+ 
+
+Car le cœur de l’homme étant le siège d’un conflit permanent entre l’Ordre (Maât) et le Désordre (Isefet), ils jugèrent qu'il était nécessaire de fonder les bases d’une immense Sagesse capable de permettre à l’homme de vaincre en lui Isefet.
+
+ 
+
+C’est alors qu’ils établirent une vision non pas Théologique mais Cosmo-Théologique digne d’attention, qui fit par la suite l'objet d'un plagiat évident sans pour autant que les sources réelles soient mises à nue.
+
+ 
+
+Parconséquent, le livre que l'auteur vous invite aujourd’hui à découvrir et dont les Textes initiatiques de l’Afrique impériale restent de brillants témoignages, marquera à jamais, votre quête spirituelle.
+ </div>
+            <div class="modal-button">
+                <button id="close3">Fermer</button>
+            </div>
+        </div>
+
+        <!-- modal 3 -->
+        <div class="sesa-modal animate__animated animate__fadeInDownBig" id="modal3">
+            <span class="close4">&times;</span>
             
             <div class="modal-body">
                 Sésa Africa est une initiative engagée à faire connaitre l’Afrique autrement, dans toute sa diversité et son authenticité.
@@ -140,7 +180,7 @@ Sésa Africa est une invitation à la découverte. Elle permet d’aller à la r
 La boite éducative sur l’Afrique disponible dans un premier temps en français et en anglais est le premier pas de Sésa Africa. C’est une invitation à embarquer pour une exploration du continent africain du nord au sud, de l’est à l’ouest tout en vous amusant.
             </div>
             <div class="modal-button">
-                <button id="close1">Fermer</button>
+                <button id="close5">Fermer</button>
             </div>
         </div>
                  </div>
@@ -150,7 +190,7 @@ La boite éducative sur l’Afrique disponible dans un premier temps en françai
     </div>
     <!-- contact section  -->
  
-    <div class="main-container">
+    <div class="main-container" id="contact">
         <div class="header-div">
             <span class="span-3">3.</span>
             <span class="span-head4">Contactez Nous</span>
@@ -193,24 +233,48 @@ La boite éducative sur l’Afrique disponible dans un premier temps en françai
     </div>
     <script>
         var modal = document.getElementById("modal1");
-
+        var modal1 = document.getElementById("modal2");
+        var modal2 = document.getElementById("modal3");
 // Get the button that opens the modal
 var btn = document.getElementById("bt1");
-
+var btn1 = document.getElementById("bt2");
+var btn2 = document.getElementById("bt3");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close2")[0];
+var span2 = document.getElementsByClassName("close4")[0];
 var close1 = document.getElementById("close1");
+var close2 = document.getElementById("close3");
+var close3 = document.getElementById("close5");
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
+}
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+btn2.onclick = function() {
+  modal3.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+span2.onclick = function() {
+  modal3.style.display = "none";
+}
 close1.onclick = function() {
   modal.style.display = "none";
+}
+close2.onclick = function() {
+  modal3.style.display = "none";
+}
+close3.onclick = function() {
+  modal3.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -248,9 +312,6 @@ window.onclick = function(event) {
                 text.textContent = "Marhaba";
             }, 16000);
             setTimeout(() => {
-                text.textContent = "Adanse";
-            }, 4000);
-            setTimeout(() => {
                 text.textContent = "Bienvenido";
             }, 18000);
             setTimeout(() => {
@@ -259,6 +320,9 @@ window.onclick = function(event) {
             setTimeout(() => {
                 text.textContent = "Mbolo";
             }, 22000); //1s = 1000 milliseconds
+            setTimeout(() => {
+                text.textContent = "Adanse";
+            }, 24000);
         }
         textLoad();
         setInterval(textLoad, 12000);
