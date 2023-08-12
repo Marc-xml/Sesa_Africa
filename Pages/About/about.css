@@ -1,0 +1,106 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.about
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./WhatsApp\ Image\ 2023-08-12\ at\ 00.53.18.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.header-div
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
+.header-div h3
+{
+    color: white;
+}
+
+.card-div
+{
+    width: auto;
+    height: 70%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+
+}
+
+
+.card
+{
+    width: 20%;
+    height: 80%;
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    background-color: rgb(255, 253, 253);
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.image
+{
+    width: 95%;
+    height: 45%;
+    border: 1px solid;
+    margin-top: 1rem;
+}
+
+
+.description
+{
+    width: 95%;
+    height: 25%;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.description p 
+{
+    color: rgb(175, 171, 171);
+    margin-top: 2px;
+}
+
+
+.but
+{
+    width: 95%;
+    height: 23%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5 rem;
+
+}
+.butt
+{
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+    background-color: rgb(255, 151, 16);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
