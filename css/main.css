@@ -4,6 +4,10 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
 .sesa-main{
     background-image: url('../images/ian-kiragu-GSh_PwsZsPQ-unsplash.jpg');
     background-size: cover;
@@ -16,7 +20,8 @@
     margin-left: -10px;
     margin-right: -10px;
     /* width:100%; */
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 200vh;
 
 }
 .overlay {
@@ -24,7 +29,8 @@
     top: 0;
     left: 0; */
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    max-height: 200vh;
     background-color: rgba(0,0,0,0.5);
   }
 .sesa-nav{
@@ -58,7 +64,7 @@
 .sesa-body{
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
+ 
     align-items: center;
     /* margin-bottom: 10rem; */
     margin-left:2rem;
@@ -152,4 +158,158 @@
     bottom:7rem;
     text-align: center;
     animation: move 2s linear infinite;
+}
+/* a propos section  */
+.sesa-about{
+
+    min-height: 100vh;
+    background-image: url('../images/annie-spratt-cVEOh_JJmEE-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-height: 200vh;
+  
+    margin-left:-10px; 
+    margin-right:-10px;
+}
+.section-title{
+    
+    color:#fff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 550;
+    padding-top:3rem;
+}
+.section-title .title-number{
+    color:orange;
+    margin-right: .4rem;
+}
+.sesa-cards{
+display:flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap:2rem;
+margin-top: 4rem;
+}
+.sesa-card{
+    background-color: #fff;
+    height: 19rem;
+    width:15rem;
+    border-radius: 10px;
+}
+
+.sesa-image {
+    background-image: url('../images/LOGO-VF-CELEBRATE-AFRICA-QUADRI.png');
+    height: 8rem;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sesa-image-1{
+    background-image: url('../images/NIOUSSIRE-K.-OMOTUNDE-ANYJART.jpeg');
+    height: 8rem;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sesa-image-2{
+    background-image: url('../images/check.jpg');
+    height: 8rem;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sesa-image-3{
+    background-image: url('../images/whatsapp-image-2023-06-25-at-15.16.24.jpeg');
+    height: 8rem;
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sesa-content{
+    text-align: center;
+    font-size: .8rem;
+    color:rgba(74, 73, 73, 0.735);
+    height:7rem;
+    overflow: hidden;
+    margin:.5rem;
+}
+.sesa-content .content-title{
+    color:orange;
+    font-weight: 450;
+    font-size: .9rem;
+}
+.orange{
+    color:#000;
+}
+.card-button{
+    text-align: center;
+}
+.card-button button{
+    height:2rem;
+    width:8rem;
+    background-color: transparent;
+    color:orange;
+    outline:none;
+    border:1px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.card-button button:hover{
+    color:#fff;
+    background-color: orange;
+}
+.sesa-modal{
+    width:25rem;
+    display: none;
+    height:25rem;
+    background-color: #fff;
+    position:fixed;
+    top:5rem;
+    bottom:15rem;
+    border-radius: 10px;
+    padding:10px;
+    border: none;
+}
+.sesa-modal .close{
+ font-size: 2rem;
+ float:right;
+ margin: .1rem .5rem;
+ cursor: pointer;
+}
+.modal-body{
+    font-size: .8rem;
+    margin-top: 2rem;
+    padding:10px;
+    /* text-align: center; */
+}
+.modal-button{
+    text-align: center;
+}
+.modal-button button{
+    height:2rem;
+    width:8rem;
+    background-color: orange;
+    color:#fff;
+    outline:none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.modal-button button:hover{
+    color:#fff;
+    background-color: transparent;
+    border: 2px solid orange;
+    color:orange;
 }

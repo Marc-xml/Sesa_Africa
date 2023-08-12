@@ -12,7 +12,7 @@
   />
 </head>
 <body>
-    <div class="sesa-main">
+    <div class="sesa-main" id="home">
         <div class="overlay">
 
               <!-- navigation bar -->
@@ -22,12 +22,12 @@
             </div>
             <!-- nav items  -->
             <div class="sesa-items">
-                <a href="" class="sesa-item">
+                <a href="#home" class="sesa-item">
                     <span class="item-number">1.</span>
                     <span class="item-name">Accueille</span>
                 </a>
                 <!-- 2nd  -->
-                <a href="" class="sesa-item">
+                <a href="#about" class="sesa-item">
                     <span class="item-number">2.</span>
                     <span class="item-name">A Propos</span>
                 </a>
@@ -62,7 +62,121 @@
 
  
     </div>
+    
+    <!-- a propo section  -->
+    <div class="sesa-about " id="about">
+        <div class="overlay">
+                 <div class="section-title">
+            <span class="title-number">2. </span> A Propos
+                 </div>
+
+                 <!-- cards  -->
+                 <div class="sesa-cards">
+                    <div class="sesa-card">
+                        <div class="sesa-image">
+                        </div>
+                        <div class="sesa-content">
+                           
+                            Sésa Africa est une initiative engagée à faire connaitre l’Afrique autrement, dans toute sa diversité et son authenticité.
+
+                            La mission de Sésa Africa est d’être un vecteur de connaissances du continent africain. Le terme : <span class="orange">« Sésa »</span> signifie Célébrer en Duala (langue originaire du Cameroun). Ainsi, il rend hommage à ce berceau de l’humanité où la civilisation humaine a commencé.
+                        </div>
+                        <div class="card-button" id="bt1">
+                            <button>En Savoir Plus <i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sesa-card">
+                        <div class="sesa-image-1">
+                        </div>
+                        <div class="sesa-content">
+                        
+                            « Si tu sais être comme le soleil, tu pourras raviver tous les soleils éteints autour de toi ; mais ça ne passera pas que par des mots, il faut y associer ton cœur et des actes ». <span class="orange">Nioussérê Kalala Omotunde</span>
+                          </div>
+                        <div class="card-button">
+                            <button>En Savoir Plus <i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sesa-card">
+                        <div class="sesa-image-2">
+                        </div>
+                        <div class="sesa-content">
+                            
+                            « La facilité avec laquelle nous renonçons, souvent, à notre culture ne s’explique que par notre ignorance de celle-ci ». <span class="orange">Cheikh Anta Diop</span>
+                        </div>
+                        <div class="card-button">
+                            <button>En Savoir Plus <i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+<!-- modal1  -->
+        <div class="sesa-modal animate__animated animate__fadeInDownBig" id="modal1">
+            <span class="close">&times;</span>
+            
+            <div class="modal-body">
+                Sésa Africa est une initiative engagée à faire connaitre l’Afrique autrement, dans toute sa diversité et son authenticité.
+
+La mission de Sésa Africa est d’être un vecteur de connaissances du continent africain. Le terme : « Sésa » signifie Célébrer en Duala (langue originaire du Cameroun). Ainsi, il rend hommage à ce berceau de l’humanité où la civilisation humaine a commencé.
+
+Sésa Africa est une invitation à la découverte. Elle permet d’aller à la rencontre de l’Afrique de manière ludique, de telle sorte que l’apprentissage devient un jeu. Pour ce, nous élaborons des dispositifs didactiques divertissants destinés aussi bien aux grands qu’aux petits.
+
+La boite éducative sur l’Afrique disponible dans un premier temps en français et en anglais est le premier pas de Sésa Africa. C’est une invitation à embarquer pour une exploration du continent africain du nord au sud, de l’est à l’ouest tout en vous amusant.
+            </div>
+            <div class="modal-button">
+                <button id="close1">Fermer</button>
+            </div>
+        </div>
+        <!-- modal2  -->
+        <div class="sesa-modal animate__animated animate__fadeInDownBig" id="modal2">
+            <span class="close">&times;</span>
+            
+            <div class="modal-body">
+                Sésa Africa est une initiative engagée à faire connaitre l’Afrique autrement, dans toute sa diversité et son authenticité.
+
+La mission de Sésa Africa est d’être un vecteur de connaissances du continent africain. Le terme : « Sésa » signifie Célébrer en Duala (langue originaire du Cameroun). Ainsi, il rend hommage à ce berceau de l’humanité où la civilisation humaine a commencé.
+
+Sésa Africa est une invitation à la découverte. Elle permet d’aller à la rencontre de l’Afrique de manière ludique, de telle sorte que l’apprentissage devient un jeu. Pour ce, nous élaborons des dispositifs didactiques divertissants destinés aussi bien aux grands qu’aux petits.
+
+La boite éducative sur l’Afrique disponible dans un premier temps en français et en anglais est le premier pas de Sésa Africa. C’est une invitation à embarquer pour une exploration du continent africain du nord au sud, de l’est à l’ouest tout en vous amusant.
+            </div>
+            <div class="modal-button">
+                <button id="close1">Fermer</button>
+            </div>
+        </div>
+                 </div>
+        </div>
+
+   
+    </div>
+    <!-- contact section  -->
+    continue here
     <script>
+        var modal = document.getElementById("modal1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("bt1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var close1 = document.getElementById("close1");
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+close1.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
         const text = document.querySelector(".changing");
         const textLoad = () => {
             setTimeout(() => {
@@ -73,7 +187,7 @@
             }, 2000);
             setTimeout(() => {
                 text.textContent = "Akwaba";
-            }, 400);
+            }, 4000);
             setTimeout(() => {
                 text.textContent = "Welcome";
             }, 6000);
